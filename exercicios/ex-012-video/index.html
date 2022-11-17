@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula video local</title>
+</head>
+<body>
+    <h1>Aula de vídeos salvo no meu servido</h1>   
+    <p>vidio em mp4</p>
+    <!--"Poster" colocar uma tamb os source funciona da mesma forma das imagens e audio se um navegador 
+    não reconhce uma arquivo vai buscar o segundo A ORDEM É MUITO IMPORTANTE começa do primeiro-->
+    <!-- "contrls é autoplay" e "poster uma tambe" e "loop quando o video terminar continuar de novo"-->
+    <video loop width="300" height="200" controls poster="img/final-video.png">
+        <source src="midia/mp4-vidio.mp4" type="video/mp4"></source> 
+        <source src="midia/mkv-vidio.mkv" type="video/mkv"></source> 
+        <source src="midia/webm-vidio.webm" type="video/webm"></source> 
+    </video>
+    <!--width é largura e height altura-->
+    <h1>colocando video so Youtube</h1>
+    <!--Só ir no youtube e compartilhar e incorporar e copiar o código-->
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/WCqEKXGtX3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

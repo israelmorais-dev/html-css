@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*fonte, configurações globais*/
+}
+body {
+    background-image: linear-gradient(to bottom, #8668A3, #D0B1EF); /* degrader*/
+}
+main {
+    background-color: #fff;
+    border-radius: 10px; /* bordas*/
+    box-shadow: 5px 5px 15px #5b456ea4; /* 1 sombra direita. 2 pra baixo. 3 expansão*/
+    /*monogromia é pegar a cor base e ir descendo para fazer uma sobra mais parecido com o fundo
+    e mexer na transparecia, tudo isso na função do vscode*/
+    width: 400px; /* largura*/
+    padding: 10px; /* espaço da lateral*/
+    margin: auto;
+}
+h1 {
+    color: #8668A3;
+    text-shadow: 1px 1px 2px #423d47;
+    text-align: center;
+}
+h2 {
+    color: #D0B1EF;
+    text-shadow: 1px 1px 2px #423d47;
+}
+p {
+    text-align: justify;
+}

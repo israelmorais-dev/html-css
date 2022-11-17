@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*recomendado utilzar o class*/
+body{
+    background-color: #83caca;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #0404be;
+}
+/*sempre colocar a # depois o nome do id.
+em class só colocar o ponto(.)*/
+h1#principal {
+    text-align: center;
+    background-color: #0404be;
+    color: white;
+}
+
+h2{
+    color: #1d1ddb;
+}
+
+.t2 {
+    background-color: #00ff9d;
+    
+}
+.t1{
+    background-color: blueviolet;
+    color: white;
+}
+.destaque{
+    background-color: #b9b90093;
+}

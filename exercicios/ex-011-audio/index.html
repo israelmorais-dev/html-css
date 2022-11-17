@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mideias em HTML</title>
+</head>
+<body>
+    <h1>Aula sobre imagens em Picture</h1>
+    <p>Aqui começa a aula com tag nova que vai se adaptando com o tamnho da imagem</p>
+    <!--pictore e source tenho que criar 3 imagem do tamanho medio,pequeno e grande para daptar a tela que eu estiver acessando-->
+    <!--media max-width o tamanho da imagem srcset o local da imagens e type o tipo de arquivo-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" 
+        type="image/png">
+        <img src="imagens/grande.png" alt="imagem grande">
+    </picture>
+    <!--como colocar um áudio no site forma limitada-->
+    <h1>Reproduzia áudio</h1>
+    <p>Vamos colocar áudio aqui</p>  
+    <!--controls autoplay-->
+    <audio src="midia/musica.mp3" controls autoplay ></audio>
+    <h2>Segunda versão para colocar áudio</h2>
+    <p>vamos utilizar esse metado em nosso site</p>
+    <!--como colocar um áudio no site forma completo-->
+    <!--o preload é importante deixar metadata o arquivo só vai carregar quando der play assim não deixar lento o site-->
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/musica.mp3" type="audio/mpeg"><!--type tem que ser de acordo com o tipo de arquivo(ogg, wav(muito pesado)... só o mp3 que mpeg)-->
+    </audio>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>   
+        h1{/*box-level*/
+            background-color: lavender;
+            height: 200px;
+            width: 300px;
+            border: 2px solid red;
+            /*importante manter essa ordem para colocar em uma linha
+            colocar a ordem no sentido do relogio*/
+            padding: 10px 10px 10px 10px;
+            /*padding do centro para fora e o margin de fora para o centro*/
+            margin: 10px auto 10px auto;
+            /*auto para centralizar*/
+            text-align: center;
+        }
+        a{ /*inline-level*/
+            border-color: blueviolet;
+            border-width: 2px;
+            border-style: solid;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelos de caixa</h1>
+    <p>exemplo de modelos de caixa h1 e p são box-levo e o <a href="#">link</a>, botões... é inlane-levo</p>
+</body>
+</html>

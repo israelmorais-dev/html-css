@@ -1,0 +1,12 @@
+/* degrader da direita right, esqueda left, em cima top, bottom*/
+* { /* isso é uma configuração global*/
+    height: 100%;
+}
+/*pegar cores para degrader*/
+body{
+    background-image: linear-gradient(to bottom, #062A73, #3F598C, #F2A950);
+}
+h1{
+    color: white;
+    background-attachment: fixed;
+}
