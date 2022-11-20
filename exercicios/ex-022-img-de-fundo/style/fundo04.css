@@ -1,0 +1,7 @@
+@charset "UTF-8";
+body{
+    height: 97vh; /*quando tiver cortando a imagens do body no top ou texto*/
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
