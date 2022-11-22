@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    /*pra colocar 100 da imagem no fundo*/ 
+    /* 
+    background-color: #000;
+    background-image: url(../imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    -----------------------------------*/
+    /*shorthand
+    color -> image -> position -> repeat -> [size (não coloca não funciona no shorthand no momento] -> attachaent
+    */
+    background: #000 url(../imagens/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover
+}
+ main{
+    background-color: #fff;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 15px;
+ }
