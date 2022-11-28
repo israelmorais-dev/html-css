@@ -11,7 +11,7 @@
         }
         table{
             width: 500px;
-            border-collapse: collapse;
+            border-collapse: collapse; /*juntar linha da tabela*/
         }
         td, th {
             border: 1px solid #000;
@@ -24,14 +24,24 @@
         .num{
             text-align: right;
         }
+        tbody > tr:nth-child(odd){ /*odd=impar, even=par*/
+            background-color: darkorchid;
+        }
+        tbody > tr:nth-child(2n){ /*baixar deixar zebrado a tabela(o nuúmero é a quantidade de linhas para pular)*/
+            background-color: lightblue;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabela grande (usar essa no dia a dia)</h1>
+    <!--descrição da tabela (semântica)-->
+    <!--TH são titulos TD são dados-->
+    <!--os scope é se o th ta na mesma linha ou a mesma coluna (semântica)-->
+    <caption>População do Brasil</caption> 
     <table>
         <thead>
             <tr>
-                <th>Cidades</th>
+                <th scope="col">Cidades</th>
                 <th>População</th>
             </tr>
         </thead>
@@ -48,9 +58,16 @@
                 <td>Bahia</td>
                 <td class="num">80,000</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">80,000</td>
+            </tr> <tr>
+                <td>Bahia</td>
+                <td class="num">80,000</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td class="num">1000,000000</td>
         </tfoot>
     </table>
