@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse; /*juntar linha da tabela*/
+            position: relative; /*para colar o cabeçalho da tabela*/
         }
         td, th {
             border: 1px solid #000;
@@ -20,6 +21,11 @@
         }
         thead, tfoot{
             background-color: gray;
+        }
+        thead > tr > th {
+            position: sticky;/*colar*/ /*para colar o cabeçalho da tabela*/
+            top: -1px; /*para colar o cabeçalho da tabela*/
+            background-color: gray; /*para colar o cabeçalho da tabela*/
         }
         .num{
             text-align: right;
@@ -71,5 +77,9 @@
             <td class="num">1000,000000</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate sint iusto, culpa sapiente eveniet amet voluptatem sunt quod accusantium ipsum quam nisi? Eligendi optio atque ad accusantium quam numquam!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id illum error laboriosam aut, nostrum aperiam voluptate est cupiditate recusandae deserunt, neque eum dicta cumque facilis explicabo ullam. Quis, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dicta blanditiis quae sed cupiditate nobis, non quod quisquam architecto exercitationem? Ipsum quam minus pariatur saepe atque ipsam nostrum cumque voluptas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam asperiores officiis eaque, enim quis veniam fugit repellat id veritatis. Amet iure eaque sapiente nesciunt sunt ab cumque tempora ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore doloribus voluptates autem, veritatis possimus sequi totam enim esse quidem culpa repellendus mollitia dolores fugiat voluptatem, eum voluptas iure laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officia praesentium eos, aliquam harum nam unde reprehenderit consequatur cupiditate blanditiis, hic reiciendis iure nostrum at quia enim quisquam? Error, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aperiam vitae corporis harum minima fugiat fuga ullam, ea in, et tenetur repuiusto, culpa sapiente eveniet amet voluptatem sunt quod accusantium ipsum quam nisi? Eligendi optio atque ad accusantium quam numquam!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi id illum error laboriosam aut, nostrum aperiam voluptate est cupiditate recusandae deserunt, neque eum dicta cumque facilis explicabo ullam. Quis, consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dicta blanditiis quae sed cupiditate nobis, non quod quisquam architecto exercitationem? Ipsum quam minus pariatur saepe atque ipsam nostrum cumque voluptas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam asperiores officiis eaque, enim quis veniam fugit repellat id veritatis. Amet iure eaque sapiente nesciunt sunt ab cumque tempora ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore doloribus voluptates autem, veritatis possimus sequi totam enim esse quidem culpa repellendus mollitia dolores fugiat voluptatem, eum voluptas iure laudantium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officia praesentium eos, aliquam harum nam unde reprehenderit consequatur cupiditate blanditiis, hic reiciendis iure nostrum at quia enim quisquam? Error, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aperiam vitae corporis harum minima fugiat fuga ullam, ea in, et tenetur repudiandae exercitationem tempore dolores? Laborum ex nihil labore? Aut?
+    </p>
 </body>
 </html>

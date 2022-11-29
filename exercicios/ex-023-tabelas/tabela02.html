@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-nr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        table{
+            width: 200px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td> <!--Para uma célula ocupar duas coluna-->       
+            </tr>
+            <tr>
+                <td rowspan="3">D</td>  <!--Para uma célula ocupar três linha-->
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>    
+                <td>H</td>
+            </tr>
+            <tr>    
+                <td colspan="2">L</td>   
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
