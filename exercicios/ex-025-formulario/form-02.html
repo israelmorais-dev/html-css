@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula dois formulário</title>
+    <style>
+        *{
+         font-family: Arial, Helvetica, sans-serif;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula sobre formulário</h1>
+    <!--*required = campo obrigatório 
+    *os type altera confome o que for usar
+    *minlength = minimo de caractere
+    *maxlength = maximo de caracteres
+    *placeholder = dica para caixas
+    *autocomplete = no form para ativar o preencimento automatico na próxima vez nas caixas
+    *autocomplete = no input para indentificar se é nome,senha,endereço...-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="user">Usuário</label>
+            <input type="text" id="user" name="user" required minlength="5" maxlength="10" placeholder="Ex: Pedro" autocomplete="username">
+        </p>
+        <p>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required  minlength="8" maxlength="20" placeholder="No minimo 8 digito" autocomplete="current-password">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
