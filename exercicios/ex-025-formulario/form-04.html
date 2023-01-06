@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de formulário</title>
+    <style>
+    .border-right-1 {
+    height: 7px;
+    width: 80px;
+    background: #f2a022;
+    right: 0px;
+    display: inline-block;
+    top: -22px;
+    position: relative;
+}
+    </style>
+</head>
+<body>
+    <!--fielset seleciona toda caixa e legend colocar um tela na linha-->
+    <h1>Exemplo de formulário</h1>
+    <span class="border-right-1"></span>
+    <form action="php.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
